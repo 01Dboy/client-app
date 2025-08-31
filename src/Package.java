@@ -6,7 +6,7 @@ import java.util.Set;
 public class Package implements Runnable {
 
     private static Set<String> usedSignatures = Collections.synchronizedSet(new HashSet<>());
-    private final static String CHAR = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+    private static final String CHAR = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
     private final Random random = new Random();
 
     @Override
