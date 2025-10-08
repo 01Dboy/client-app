@@ -20,7 +20,7 @@ public class UserInput {
 
         int choiceNumber = intInputData();
 
-        while ((choiceNumber <1)||(choiceNumber >3)) {
+        while ((choiceNumber < 1) || (choiceNumber > 3)) {
             System.out.println("Цифра должна быть от 1 до 3х включительно! Повторите ввод.");
             choiceNumber = intInputData();
         }
@@ -35,7 +35,7 @@ public class UserInput {
 
         String data = stringInputData();
 
-        while (data.length()>200) {
+        while (data.length() > 200) {
             System.out.println("Символов должно быть не более 200! Повторите ввод.");
             data = stringInputData();
         }

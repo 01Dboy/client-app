@@ -6,7 +6,6 @@ public class DataSendThread extends Thread {
 
     public DataSendThread(BlockingQueue<byte[]> inputQueue) {
         this.inputQueue = inputQueue;
-        setName("DataSendThread");
     }
 
     @Override

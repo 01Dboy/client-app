@@ -7,7 +7,6 @@ public class DataPackingThread extends Thread {
     public DataPackingThread(BlockingQueue<UserData> inputQueue, BlockingQueue<byte[]> outputQueue) {
         this.inputQueue = inputQueue;
         this.outputQueue = outputQueue;
-        setName("DataPackingThread");
     }
 
     @Override

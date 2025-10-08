@@ -7,7 +7,6 @@ public class DataInputThread extends Thread {
     public DataInputThread(BlockingQueue<UserData> outputQueue) {
         this.outputQueue = outputQueue;
         this.userInput = new UserInput();
-        setName("DataInputThread");
     }
 
     @Override
@@ -19,7 +18,7 @@ public class DataInputThread extends Thread {
             boolean continueSending = true;
             int packageCount = 0;
 
-            while (!isInterrupted()&&continueSending) {
+            while (!isInterrupted() && continueSending) {
                 packageCount++;
 
                 System.out.println(ClientConfig.PURPLE + "Отправка пакета №" + packageCount + ":" + ClientConfig.RESET);
